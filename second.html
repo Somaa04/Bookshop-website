@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Sign In</title>
+</head>
+
+<body class="h-[100vh] dark:bg-neutral-800">
+  <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <h1 class="dark:text-white text-neutral-800 text-xl font-medium text-center">
+      Please sign in to your account to explore our collection and manage your orders
+    </h1>
+
+    <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <h2 class="mt-10 text-center text-2xl font-bold tracking-tight dark:text-white text-neutral-800">
+        Sign in to your account
+      </h2>
+    </div>
+
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <form action="#" method="POST" class="space-y-6">
+        <!-- Email Field -->
+        <div>
+          <label for="email" class="text-sm font-medium text-gray-100 flex items-center gap-2">
+            <!-- Email Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M22 7L13.009 12.727a2 2 0 0 1-2.009 0L2 7" />
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+            </svg>
+            <span class="text-[18px]">Email address</span>
+          </label>
+          <div class="mt-2">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              required
+              autocomplete="email"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline outline-1 outline-white/10 placeholder:text-green-500 focus:outline-2 focus:outline-green-300/50 sm:text-sm"
+            />
+          </div>
+        </div>
+
+        
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="text-sm font-medium text-gray-100 flex items-center gap-2">
+              <!-- Password Icon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+              </svg>
+              <span class="text-[18px]">Password</span>
+            </label>
+            <div class="text-sm">
+              <a href="#" class="font-semibold text-green-400 hover:text-green-300">Forgot password?</a>
+            </div>
+          </div>
+          <div class="mt-2">
+            <input
+              id="password"
+              type="password"
+              name="password"
+              required
+              autocomplete="current-password"
+              class="block w-full rounded-md bg-white/5 px-3 py-1.5 text-base text-white outline outline-1 outline-white/10 placeholder:text-green-500 focus:outline-2 focus:outline-green-300/50 sm:text-sm"
+            />
+          </div>
+        </div>
+
+       
+        <div>
+          <button
+            type="submit"
+            class="flex w-full justify-center rounded-md bg-green-500 px-3 py-1.5 text-sm font-semibold text-white hover:bg-green-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500"
+          >
+            Sign in
+          </button>
+        </div>
+      </form>
+
+      <p class="mt-10 text-center text-sm text-green-400">
+        Not a member?
+        <a href="#" class="font-semibold text-black dark:text-white hover:text-green-300">Start a 14 day free trial</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
